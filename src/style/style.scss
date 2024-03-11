@@ -1,4 +1,60 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    
+}
+
+.main_container {
+    background-color: gray;
+    background-image: url(../Assets/imgs/BG.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+//Navbar
+
+.navbar {
+    display: flex;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.151);
+    justify-content: center;
+}
+
+//.navbar-brand {
+//    background-color: aqua;
+//}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    color: white;
+    
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-item {
+    font-style: italic;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: white;
+}
+
+.logo {
+    width: 10vw;
+    height: 6vh;
 }
