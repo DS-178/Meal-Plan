@@ -6,26 +6,51 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body>  
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <!-- Vertically centered modal -->  
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content login-content">
+            <form>
+                <i class="fa-solid fa-user-shield"></i>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button class="btn btn-danger">Abbrechen</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+        </div>
+    </div>
+  
     <div class="main_container">
         <nav class="navbar">
             <div class="nav-container">
-              <a class="navbar-brand" href="#">
-                <img class="logo" src="Assets/imgs/logo-weiss-schatten.png" alt="Logo">
-              </a>
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">PLAN</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">KOCHAG</a>
-                </li>
-            </ul>
-            <button type="button" class="btn btn-primary">Anmelden</button>
+                <a class="navbar-brand" href="#">
+                  <img class="logo" src="Assets/imgs/logo-weiss-schatten.png" alt="Logo">
+                </a>
+                
+                <!-- Button trigger modal -->
+                <div class="login_group">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Anmelden</button>
+                    <!-- <i class="fa-solid fa-user-pen"></i> -->
+                </div>
             </div>
         </nav>
     </div>
-    <link rel="stylesheet" href="bootstrap/dist/js/bootstrap.min.js">
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
