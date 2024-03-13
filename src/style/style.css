@@ -16,8 +16,7 @@
 
 .navbar {
   display: flex;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.151);
   justify-content: center;
 }
@@ -104,4 +103,6 @@ form i {
   border: solid 1px gray;
   border-bottom: rgb(255, 255, 255) solid 2px;
   color: white;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
