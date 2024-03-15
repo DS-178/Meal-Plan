@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: inherit;
-  font-style: italic;
 }
 
 .main_container {
@@ -56,7 +55,7 @@
 }
 
 .modal-dialog {
-  max-width: 40vw;
+  max-width: 50vw;
 }
 
 .login-content {
@@ -70,7 +69,8 @@
 }
 
 .login-content img {
-  width: 20vw;
+  width: 100%;
+  margin: 2vh;
 }
 
 .Login_title {
@@ -78,6 +78,7 @@
 }
 
 .Loginform {
+  min-width: 24vw;
   background-color: rgb(58, 58, 58);
   padding: 1vh;
   border-radius: 1vh;
@@ -123,6 +124,13 @@ form i {
   border: grey solid 1Px;
 }
 
+.plan-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .form-control {
   background: none;
   border: solid 1px gray;
@@ -159,6 +167,12 @@ input[type=number]:focus,
 [type=tel].form-control:focus,
 [contenteditable].form-control:focus {
   box-shadow: inset 0 -1px 0 rgba(221, 221, 221, 0);
+}
+
+.Editor_main {
+  width: 100dvw;
+  height: 100dvh;
+  background: gray;
 }
 
 /*# sourceMappingURL=style.css.map */
