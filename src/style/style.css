@@ -18,7 +18,7 @@
 .navbar {
   display: flex;
   backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.151);
+  background-color: #1B4E9B;
   justify-content: center;
 }
 
@@ -61,11 +61,10 @@
 .login-content {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
   background-color: rgb(54, 54, 54);
   color: white;
   padding: 2vh;
-  /*border: solid $NCBlue 1px;*/
+  border: solid #1B4E9B 1px;
 }
 
 .login-content img {
@@ -172,7 +171,7 @@ input[type=number]:focus,
 .Editor_main {
   width: 100dvw;
   height: 100dvh;
-  background: gray;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
